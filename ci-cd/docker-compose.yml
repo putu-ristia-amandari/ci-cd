@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  backend:
+    build: .
+    networks:
+      - host
+    ports: 
+      - "8080:8080"
+networks:
+  host:
